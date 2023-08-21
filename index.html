@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>A random map for The Quest for El Dorado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+    </style>
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  <script>
+   $(document).ready(function() {
+       var randomNum = Math.floor(Math.random() * 69)+1;
+       $('#img').attr('src','images/img-'+randomNum+'.png')
+     });
+  </script>
+</head>
+  
+<body>
+  <div class="imgbox">
+    <img class="center-fit" id='img'>
+  </div>
+  <div>Maps proposed on <a href="https://boardgamegeek.com/">bgg</a> by the user <a href="https://boardgamegeek.com/user/1qwerty">1qwerty</a>, see <a href="https://boardgamegeek.com/filepage/172663/40-custom-maps-quest-el-dorado">https://boardgamegeek.com/filepage/172663/40-custom-maps-quest-el-dorado</a></div>
+</body>
+
+</html>
